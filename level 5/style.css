@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+[class ^="box-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vh solid black;
+    border-radius: 10px;
+}
+
+[class ^="block-"] {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.block-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-1,
+.box-5 {
+    flex-basis: 100%;
+    height: 20vh;
+}
+
+.box-3 {
+    flex-basis: 60%;
+    height: 60vh;
+}
+
+.box-2,
+.box-4 {
+    flex-basis: 20%;
+}
+
+@media (max-width:480px) {
+    .block-2 {
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    .box-2 {
+        display: none;
+    }
+
+    .box-3 {
+        flex-basis: 80%;
+    }
+}

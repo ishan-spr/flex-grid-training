@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+}
+
+.container > div{
+    text-align: justify;
+}
+
+.aside{
+    width: 35vw;
+    margin: 0px 10px ;
+    border-right: 2px solid black;
+    padding: 0px 15px;
+}
+
+.main{
+    padding: 0px 5px;
+}
+
+@media (max-width:480px) {
+    .container{
+        flex-direction: column;
+    }
+    .aside{
+        border: none;
+        width: initial;
+        padding: 0px 5px;;
+    }
+}
