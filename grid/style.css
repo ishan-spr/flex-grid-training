@@ -1,5 +1,5 @@
-h2{
-    text-align: center;
+h2 {
+	text-align: center;
 }
 
 img {
@@ -44,3 +44,28 @@ img {
 	grid-row: span 2;
 }
 
+
+@media (max-width:420px) {
+
+	.wide,
+	.tall,
+	.big,
+	.grid_wrapper>div {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+
+@media (max-width:912px) {
+
+	.wide,
+	.tall{
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+
+	.big {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
